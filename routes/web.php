@@ -24,6 +24,7 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
 // ランキング
 Route::get('ranking/want', 'RankingController@want')->name('ranking.want');
+Route::get('ranking/have', 'RankingController@have')->name('ranking.have');
 
 // 検索結果の表示・want機能
 Route::group(['middleware' => ['auth']], function () {
